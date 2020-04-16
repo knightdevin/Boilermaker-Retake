@@ -1,4 +1,12 @@
+# Ignore all node modules
 node_modules
 
+# Ignore the compiles JS from webpack (NOTE: This file is placed in public folder)
 public/bundle.js
 public/bundle.js.map
+
+# If you're wondering why we're ignoring bundle.js, it's because 
+#  it will become a fairly large file that will always change. 
+#  Instead of git tracking it, we can ignore it and either build it 
+#  before setting it up on our production server (or have our 
+#  production server build it).
